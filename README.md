@@ -14,8 +14,8 @@ I've lived with a murderer.
 Text from my index page:
 
 # Hi! My name is Jack Gentleman (He/Him). #
-My goal for this course is to learn how to make a portfolio website for myself which I can show potential employers.</p>
+My goal for this course is to learn how to make a portfolio website for myself which I can show potential employers.
 I am currently a senior majoring in computer science with a ctd minor. I am originally from Clarendon Hills, which is a few minutes outside of Chicago, Illinois.
-[Photo of me ("/img/composite_photo.jpg")]
-![] (/img/composite_photo.jpg)
-[Click for free crypto, no scam("https://www.youtube.com/watch?v=lCcwn6bGUtU")]
+[Photo of me]("/img/composite_photo.jpg")
+![alt text](/img/composite_photo.jpg)
+[Click for free crypto, no scam]("https://www.youtube.com/watch?v=lCcwn6bGUtU")
