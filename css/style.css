@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    color: #000000;
+}
+
+h2 {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+}
+
+h3 {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+}
+
+h4 {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+}
+
+h5 {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+h6 {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;  
+    color: #000000;
+}
+
+p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+hr {
+    border: 3px solid #F2668B;
+}
+
+ul {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    padding: 30px;
+}
+
+ol {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    padding: 30px;
+}
+
+button {
+    background: #03A688;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+button:hover {
+    background: #026873;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+button:active {
+    background: #011F26;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+a:link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #03A688;
+    text-decoration: none;
+}
+
+a:hover {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration-line: underline;
+    color: #03A688;
+}
+
+a:visited {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #025E73;
+    text-decoration: none;
+}
