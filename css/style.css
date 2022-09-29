@@ -68,6 +68,7 @@ p {
 
 hr {
     border: 3px solid #F2668B;
+    display: flex;
 }
 
 ul {
@@ -134,16 +135,54 @@ a:hover {
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
-    text-decoration-line: underline;
+    text-decoration-line: none;
     color: #03A688;
 }
 
-a:visited {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    color: #025E73;
-    text-decoration: none;
+.logo-text {
+    padding: 20px;
+    color: white;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #011F26;
+    top: 0;
+    position: sticky;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.home-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+img {
+    width: 350px;
+    height: auto;
+}
+
+@media only screen and (max-width: 510px) {
+    .home-content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+    nav {
+        grid-template-columns: 1fr;
+    }
+
+    ul li a {
+        font-size: 12px;
+    }
 }
