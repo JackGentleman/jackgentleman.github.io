@@ -11,6 +11,7 @@ h1 {
     line-height: 47px;
     color: #000000;
     text-align: center;
+    padding: 20px;
 }
 
 h2 {
@@ -66,6 +67,8 @@ p {
     line-height: 19px;
     color: #000000;
     text-align: center;
+    margin: 0 auto;
+    max-width: 960px;
 }
 
 hr {
@@ -123,6 +126,36 @@ button:active {
     color: #FFFFFF;
 }
 
+a:link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #03A688;
+    text-decoration: none;
+}
+
+a:visited {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: none;
+    color: #03A688;
+}
+
+a:hover {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: none;
+    color: #F2668B;
+}
+
 ul li a:link {
     font-family: 'Roboto';
     font-style: normal;
@@ -170,6 +203,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
+    padding-right: 80px;
 }
 
 /* container styling for page content */
@@ -178,6 +212,25 @@ nav ul {
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px 40px;
     justify-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 40px;
+}
+
+.experience-list-item-left {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 120px 40px;
+    justify-items: center;
+    padding: 80px;
+}
+
+.experience-list-item-right {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 120px 40px;
+    justify-items: center;
+    padding: 80px;
 }
 
 /* container styling for images at bottom of main page */
@@ -197,7 +250,7 @@ img {
 section {
     margin-top: auto;
     margin-bottom: auto;
-    padding: 80px;
+    padding: 40px;
 }
 
 figure {
@@ -207,6 +260,12 @@ figure {
 /* container styling for navbar current page */
 ul li a.current-page {
     color: #F2668B;
+}
+
+/* used to make larger photos */
+.big-photo {
+    width: 550px;
+    height: auto;
 }
 
 @media only screen and (max-width: 510px) {
@@ -221,6 +280,10 @@ ul li a.current-page {
 
     nav {
         grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        padding-right: 20px;
     }
 
     ul li a:link {
@@ -251,5 +314,9 @@ ul li a.current-page {
         line-height: 23px;
         text-decoration-line: none;
         color: #03A688;
+    }
+
+    ul li a.current-page {
+        color: #F2668B;
     }
 }
