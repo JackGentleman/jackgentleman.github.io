@@ -10,6 +10,7 @@ h1 {
     font-size: 40px;
     line-height: 47px;
     color: #000000;
+    text-align: center;
 }
 
 h2 {
@@ -64,11 +65,14 @@ p {
     font-size: 16px;
     line-height: 19px;
     color: #000000;
+    text-align: center;
 }
 
 hr {
     border: 3px solid #F2668B;
     display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 ul {
@@ -168,14 +172,41 @@ nav ul {
     list-style: none;
 }
 
-.home-content {
+/* container styling for page content */
+.page-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 40px 40px;
+    justify-items: center;
+}
+
+/* container styling for images at bottom of main page */
+.images-of-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px;
+    justify-items: center;
+    padding: 40px;
 }
 
 img {
     width: 350px;
     height: auto;
+}
+
+section {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 80px;
+}
+
+figure {
+    text-align: center;
+}
+
+/* container styling for navbar current page */
+ul li a.current-page {
+    color: #F2668B;
 }
 
 @media only screen and (max-width: 510px) {

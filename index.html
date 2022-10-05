@@ -1,60 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Home Page</title>
-</head>
-<body>
-    <nav>
-        <h2 class="logo-text">Jack Gentleman</h2>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="bio.html">About Me</a></li>
-            <li><a href="experience.html">My Experience</a></li>
-            <li><a href="projects.html">Projects</a></li>
-        </ul>
-    </nav>
-    <h1>Hi! My name is Jack Gentleman (He/Him).</h1>
-    <main class="home-content">
-        <img src="./img/composite_photo.jpg" alt="photo of me">
-        <section>
-            <p>My goal for this course is to learn how to make a portfolio website for myself which I can show potential employers.</p>
-            <p>I am currently a senior majoring in computer science with a ctd minor. I am originally from Clarendon Hills, 
-                which is a few minutes outside of Chicago, Illinois.</p>
-            <a href="./img/composite_photo.jpg">Photo of me</a>
-            <p></p>
-            <a href="https://www.youtube.com/watch?v=lCcwn6bGUtU">Click for free crypto, no scam</a>
-            <p></p>
-            <hr>
-        </section>
-        <section>
-            <h1>Heading 1</h1>
-            <h2>Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
-            <h6>Heading 6</h6>
-            <p>Paragraph</p>
-        </section>
-        <section>
-            <h6>Unordered List</h6>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Home Page</title>
+    </head>
+    <body>
+        <nav>
+            <h2 class="logo-text">Jack Gentleman</h2>
             <ul>
-                <li>List item</li>
-                <li>List item</li>
-                <li>List item</li>
+                <li><a class="current-page" href="index.html">Home</a></li>
+                <li><a href="bio.html">About Me</a></li>
+                <li><a href="experience.html">My Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
             </ul>
-            <h6>Ordered List</h6>
-            <ol>
-                <li>List item</li>
-                <li>List item</li>
-                <li>List item</li>
-            </ol>
-            <button>This is a button</button>
-            <p><a href="#">This is a link</a></p>
-        </section>
-    </main> <!--end of home content-->
+        </nav>
+        <main>
+            <section class="page-content">
+                <section>
+                    <h1>Hi! My name is Jack Gentleman (He/Him).</h1>
+                    <hr>
+                    <p>I am a senior and Evans Scholar at the University of Coloado at Boulder. I am studying Computer Science with a minor in Creative Technology Design.</p>
+                </section>
+                <img src="./img/composite_photo.jpg" alt="photo of me">
+            </section> <!--end of summary content-->
+            <div class="images-of-me">
+                <figure>
+                    <img src="img/MeWithWaterfall.jpg" alt="Me next to waterfall">
+                    <figcaption>That one time I went hiking.</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/Santa.jpg" alt="Me dressed as santa">
+                    <figcaption>When I dressed up as Santa and delivered gifts to a local retirement home.</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/GuitarMan.jpg" alt="Me holding a guitar">
+                    <figcaption>I also play guitar.</figcaption>
+                </figure>
+            </div>
+        </main> <!--end of photos-->
     </body>
 </html>
