@@ -72,10 +72,12 @@ p {
 }
 
 hr {
-    border: 3px solid #F2668B;
+    border: 2px solid #F2668B;
     display: flex;
+    margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
+    max-width: 60%;
 }
 
 ul {
@@ -251,6 +253,7 @@ section {
     margin-top: auto;
     margin-bottom: auto;
     padding: 40px;
+    text-align: center;
 }
 
 figure {
@@ -269,7 +272,7 @@ ul li a.current-page {
 }
 
 @media only screen and (max-width: 510px) {
-    .home-content {
+    .page-content {
         display: grid;
         grid-template-columns: 1fr;
     }
