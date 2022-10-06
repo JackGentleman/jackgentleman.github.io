@@ -272,6 +272,7 @@ ul li a.current-page {
 }
 
 @media only screen and (max-width: 510px) {
+
     .page-content {
         display: grid;
         grid-template-columns: 1fr;
@@ -321,5 +322,17 @@ ul li a.current-page {
 
     ul li a.current-page {
         color: #F2668B;
+    }
+
+    .images-of-me {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-list-item-left {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-list-item-right {
+        grid-template-columns: 1fr;
     }
 }
