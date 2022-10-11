@@ -4,6 +4,7 @@ btn1.addEventListener("click", function onclick(event) {
 });
 
 const btn2 = document.getElementById("hide-nav");
-btn2.addEventListener("click", function onclick(event) {
+function mouseOver() {
     document.getElementById("nav-bar").style.display = "none";
-});
+}
+btn2.addEventListener("mouseover", mouseOver);
