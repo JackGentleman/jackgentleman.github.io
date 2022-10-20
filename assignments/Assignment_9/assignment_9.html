@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Image gallery</title>
+    <link rel="stylesheet" href="../../css/style.css">
+  </head>
+
+  <style>
+      .full-img {
+        position: relative;
+        display: block;
+        width: 640px;
+        height: 480px;
+      }
+      
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 640px;
+        height: 480px;
+        background-color: rgba(0,0,0,0);
+      }
+
+      .thumb-bar img {
+        display: block;
+        width: 20%;
+        float: left;
+        cursor: pointer;
+      }
+
+      .smallBody {
+        width: 640px;
+        height: auto;
+        margin: 0 auto;
+      }
+
+      button {
+        position: absolute;
+        cursor: pointer;
+        top: 2px;
+        left: 2px;
+      }
+
+      img {
+        width: auto;
+        height: 480px;
+      }
+
+      .smallImg {
+        height: auto;
+      }
+  </style>
+
+  <body>
+    <nav>
+      <h2 class="logo-text">Jack Gentleman</h2>
+      <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../bio.html">About Me</a></li>
+          <li><a href="../../experience.html">My Experience</a></li>
+          <li><a href="../../projects.html">Projects</a></li>
+          <li><a class="current-page" href="assignment_9.html">Image Carousel</a></li>
+      </ul>
+    </nav>
+    <div class="smallBody">
+      <h1>Image gallery example</h1>
+
+      <div class="full-img">
+        <img class="displayed-img" src="../../img/Screenshot2022-10-06142752.png" alt="Guitar guy">
+        <div class="overlay"></div>
+        <button class="dark">Darken</button>
+      </div>
+
+      <div class="thumb-bar">
+
+
+      </div>
+      <script src="main.js"></script>
+    </div>
+  </body>
+</html>
