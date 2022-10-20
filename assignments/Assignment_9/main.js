@@ -5,7 +5,7 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
-const imgArray = ['../../img/GuitarMan.jpg', '../../img/MeWithWaterfall.jpg', '../../img/Screenshot2022-10-06142752.png', '../../img/santa.jpg', '../../img/IMG-6316.jpg']
+const imgArray = ['../../img/GuitarMan.jpg', '../../img/MeWithWaterfall.jpg', '../../img/Screenshot2022-10-06142752.png', '../../img/Santa.jpg', '../../img/IMG-6316.jpg']
 
 /* Declaring the alternative text for each image file */
 const altArray = ['Guitar guy', 'I like water', 'bird', 'I hate christmas', 'Danny Rankin']
