@@ -106,7 +106,7 @@ function loop() {
   
   loop();
 
-
+  // I felt like adding more
   const btn = document.querySelector('button');
   const numberInput = document.getElementById('numberofballs');
   btn.addEventListener('click', () => {
