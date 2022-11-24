@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,19 +9,18 @@ h1 {
     font-family: 'Archivo';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 47px;
+    font-size: 44px;
+    line-height: 50px;
     color: #000000;
     text-align: center;
-    padding: 20px;
 }
 
 h2 {
     font-family: 'Archivo';
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 40px;
+    line-height: 46px;
     color: #000000;
 }
 
@@ -27,12 +28,21 @@ h3 {
     font-family: 'Archivo';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 38px;
+    line-height: 42px;
     color: #000000;
 }
 
 h4 {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 38px;
+    color: #000000;
+}
+
+h5 {
     font-family: 'Archivo';
     font-style: normal;
     font-weight: 400;
@@ -41,21 +51,12 @@ h4 {
     color: #000000;
 }
 
-h5 {
-    font-family: 'Archivo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    color: #000000;
-}
-
 h6 {
     font-family: 'Archivo';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;  
+    font-size: 24px;
+    line-height: 27px;  
     color: #000000;
 }
 
@@ -63,8 +64,20 @@ p {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+figure figcaption {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
     color: #000000;
     text-align: center;
     margin: 0 auto;
@@ -132,8 +145,8 @@ a:link {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 20px;
+    line-height: 23px;
     color: #03A688;
     text-decoration: none;
 }
@@ -142,8 +155,8 @@ a:visited {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 20px;
+    line-height: 23px;
     text-decoration-line: none;
     color: #03A688;
 }
@@ -152,8 +165,8 @@ a:hover {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 20px;
+    line-height: 23px;
     text-decoration-line: none;
     color: #F2668B;
 }
@@ -212,11 +225,11 @@ nav ul {
 .page-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 40px 40px;
+    grid-gap: 4% 4%;
     justify-items: center;
     margin-top: auto;
     margin-bottom: auto;
-    padding: 40px;
+    padding: 4%;
 }
 
 .experience-list-item-left {
@@ -224,7 +237,10 @@ nav ul {
     grid-template-columns: 1fr 2fr;
     grid-gap: 120px 40px;
     justify-items: center;
-    padding: 80px;
+    padding: 8%;
+    grid-template-areas:
+   "title experience"; 
+
 }
 
 .experience-list-item-right {
@@ -232,7 +248,46 @@ nav ul {
     grid-template-columns: 2fr 1fr;
     grid-gap: 120px 40px;
     justify-items: center;
-    padding: 80px;
+    padding: 8%;
+   grid-template-areas:
+   "experience title"; 
+}
+
+.title {
+    grid-area: title;
+}
+
+.experience {
+    grid-area: experience;
+}
+
+.project-list-item-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 120px 40px;
+    justify-items: center;
+    padding: 8%;
+    grid-template-areas:
+   "picture description"; 
+
+}
+
+.project-list-item-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 120px 40px;
+    justify-items: center;
+    padding: 8%;
+   grid-template-areas:
+   "description picture"; 
+}
+
+.picture {
+    grid-area: picture;
+}
+
+.description {
+    grid-area: description;
 }
 
 /* container styling for images at bottom of main page */
@@ -245,7 +300,8 @@ nav ul {
 }
 
 img {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: auto;
 }
 
@@ -267,11 +323,18 @@ ul li a.current-page {
 
 /* used to make larger photos */
 .big-photo {
-    width: 550px;
+    width: 100%;
+    max-width: 550px;
     height: auto;
 }
 
-@media only screen and (max-width: 510px) {
+canvas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 800px) {
 
     .page-content {
         display: grid;
@@ -330,9 +393,146 @@ ul li a.current-page {
 
     .experience-list-item-left {
         grid-template-columns: 1fr;
+        grid-template-areas: 
+        "title"
+        "experience";
     }
 
     .experience-list-item-right {
         grid-template-columns: 1fr;
+        grid-template-areas: 
+        "title"
+        "experience";
+    }
+
+    .project-list-item-left {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "description"
+        "picture";
+    }
+
+    .project-list-item-right {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "description"
+        "picture";
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    nav ul {
+        flex-flow: column nowrap;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 310px) {
+    h1 {
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 40px;
+        color: #000000;
+        text-align: center;
+    }
+
+    h2 {
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 37px;
+        color: #000000;
+    }
+
+    p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 960px;
+    }
+    
+    figure figcaption {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 960px;
+    }
+
+    a:link {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #03A688;
+        text-decoration: none;
+    }
+    
+    a:visited {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration-line: none;
+        color: #03A688;
+    }
+    
+    a:hover {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration-line: none;
+        color: #F2668B;
+    }
+
+    ul li a:link {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+        color: #03A688;
+        text-decoration: none;
+    }
+    
+    ul li a:hover {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+        text-decoration-line: none;
+        color: #03A688;
+    }
+    
+    ul li a:visited {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+        text-decoration-line: none;
+        color: #03A688;
+    }
+
+    ul li a.current-page {
+        color: #F2668B;
     }
 }
