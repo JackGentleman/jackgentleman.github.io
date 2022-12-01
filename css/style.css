@@ -82,6 +82,7 @@ figure figcaption {
     text-align: center;
     margin: 0 auto;
     max-width: 960px;
+    padding: 1em;
 }
 
 hr {
@@ -201,11 +202,6 @@ ul li a:visited {
     color: #03A688;
 }
 
-.logo-text {
-    padding: 20px;
-    color: white;
-}
-
 nav {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -319,6 +315,11 @@ figure {
 /* container styling for navbar current page */
 ul li a.current-page {
     color: #F2668B;
+}
+
+.logo-text {
+    padding: 20px;
+    color: white;
 }
 
 /* used to make larger photos */
